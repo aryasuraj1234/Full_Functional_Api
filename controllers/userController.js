@@ -156,7 +156,7 @@ const resetPasswordMail=async(req,res)=>{
  try {
 
   const {email} = req.body;
-  // cheak mail resistered or not
+  // cheak mail resistered or not.................
 if (email) {
   const user = await userModel.findOne({email:email});
   if(user){
